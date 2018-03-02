@@ -1,0 +1,11 @@
+syntax on
+
+nnoremap <F1> :tabp <CR>
+nnoremap <F2> :tabn <CR>
+set mouse=a
+ 
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set incsearch
+
+imap <S-Space>  <Esc>
+nmap <S-Space> i
