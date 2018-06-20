@@ -11,12 +11,15 @@
           \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
         autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
     endif
+
     let g:airline_theme='light'
+
     call plug#begin()
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ctrlpvim/ctrlp.vim'              " Fuzzy file matching
     Plug 'ntpeters/vim-better-whitespace'  " Highlight trailing whitespace
     Plug 'vim-scripts/AutoComplPop'        " Autocompletion as I type
+    Plug 'fatih/vim-go'
     Plug 'w0rp/ale'                        " In-editor linting
     call plug#end()
