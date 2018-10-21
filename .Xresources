@@ -1,9 +1,8 @@
-URxvt.font: xft:Terminus:size=12
+URxvt*font: xft:Terminus:size=12, xft:Gothic
 URxvt.boldFont: xft:Terminus
 URxvt.inputMethod: ibus
 URxvt.preeditType: OverTheSpot
 URxvt.scrollBar: false
-URxvt.keysym.S-space: \033
 
 ! special
  *.foreground:   #ffffff
@@ -49,12 +48,12 @@ URxvt.keysym.S-space: \033
 ! ! Use extended color scheme
  rofi.color-enabled:                  true
 ! ! Color scheme for normal row
- rofi.color-normal:                   argb:00000000,  #D8DEE9 , argb:00000000,  #31658c ,  #1B2B34
+ rofi.color-normal:                   #ffffe7,  #303030 , #ffffe7,  #dcf0f8, #303030
 ! ! Color scheme for urgent row
- rofi.color-urgent:                   argb:00000000,  #F99157 , argb:00000000,  #F99157 ,  #1B2B34
+ rofi.color-urgent:                   #ffffe7,  #F99157 , #ffffe7,  #F99157 ,  #1B2B34
 ! ! Color scheme for active row
- rofi.color-active:                   argb:00000000,  #6699CC , argb:00000000,  #6699CC ,  #1B2B34
+ rofi.color-active:                   #303030,  #6699CC , #303030,  #6699CC ,  #1B2B34
 ! ! Color scheme window
- rofi.color-window:                   argb:ee222222,  #31658c ,  #31658c
+ rofi.color-window:                   #ffffe7,  #DCF0F8 ,  #DCF0F8
 ! ! Separator style (none, dash, solid)
  rofi.separator-style:                solid

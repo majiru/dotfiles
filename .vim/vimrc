@@ -3,9 +3,15 @@ syntax on
 nnoremap <F1> :tabp <CR>
 nnoremap <F2> :tabn <CR>
 set mouse=a
- 
+
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set incsearch
+set nu
 
-imap <S-Space>  <Esc>
-nmap <S-Space> i
+map <C-n> :NERDTreeToggle <CR>
+au FileType go nmap <buffer> <CR> :GoBuild<CR>
+au FileType go nmap <buffer> <S-CR> :GoRun<CR>
+
+" Jump to last opened location
+au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+  \| exe "normal! g'\"" | endif

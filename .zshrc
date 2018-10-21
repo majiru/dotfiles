@@ -1,15 +1,11 @@
-# If you come from bash you might have to change your $PATH.
- export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
- export PYTHONPATH=/home/moody/.local/lib/python2.7
+export ZSH=/home/moody/.oh-my-zsh
 
-# Path to your oh-my-zsh installation.
-  export ZSH=/home/moody/.oh-my-zsh
-
-export EDITOR=vim
+#Python
+PYTHONPATH=/home/moody/.local/lib/python2.7
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="mh"
+ZSH_THEME="minimal"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -25,7 +21,7 @@ ZSH_THEME="mh"
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+ DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -85,4 +81,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim='nvim'
+

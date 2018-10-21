@@ -17,8 +17,8 @@ exec --no-startup-id ibus-daemon
 
 workspace 1 gaps inner 48
 workspace 1 gaps outer 60
-workspace 2 gaps inner 18
-workspace 2 gaps outer 20
+workspace 2 gaps inner 48
+workspace 2 gaps outer 60
 
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -40,18 +40,18 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec st
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec zsh -c "rofi -terminal urxvt -show run"
-bindsym $mod+p exec zsh -c "rofi -terminal urxvt -show ssh"
-bindsym $mod+c exec urxvt -e "cava -p /home/moody/.config/cava/config2"
+bindsym $mod+d exec zsh -c "rofi -terminal st -show run"
+bindsym $mod+p exec zsh -c "rofi -terminal st -show ssh"
+bindsym $mod+c exec st -e "cava -p /home/moody/.config/cava/config2"
 bindsym $mod+t exec thunar
 bindsym $mod+u exec "light-locker-command -l"
-bindsym $mod+m exec "/home/moody/bin/clerk"
+bindsym $mod+m exec "/home/moody/bin/clerk -a -l"
 bindsym $mod+Shift+m exec scrot
 bindsym $mod+b exec "/home/moody/bin/dmenu_edit"
 bindsym $mod+Shift+b exec "/home/moody/bin/dmenu_edit NOT_A_DIRECTORY"
@@ -201,9 +201,11 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 colors{
-        focused_workspace #1035560 #103560 #ffffff
+        focused_workspace #e9ffff #e9ffff #303030
+        background #ffffe7
+        statusline #303030
 }
         tray_output DVI-I-1
 	position top
-        status_command i3status 
+        status_command i3status
 }

@@ -1,5 +1,6 @@
     set runtimepath^=~/.vim runtimepath+=~/.vim/after
     let &packpath = &runtimepath
+
     source ~/.vim/vimrc
 
     if !has('nvim')
@@ -13,6 +14,8 @@
     endif
 
     let g:airline_theme='light'
+    set termguicolors
+    colorscheme acme
 
     call plug#begin()
     Plug 'vim-airline/vim-airline'
@@ -21,5 +24,9 @@
     Plug 'ntpeters/vim-better-whitespace'  " Highlight trailing whitespace
     Plug 'vim-scripts/AutoComplPop'        " Autocompletion as I type
     Plug 'fatih/vim-go'
+    Plug 'tpope/vim-fugitive'
+    Plug 'scrooloose/nerdtree'
     Plug 'w0rp/ale'                        " In-editor linting
+    Plug 'lervag/vimtex'                   " 311
     call plug#end()
+
